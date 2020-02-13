@@ -5,7 +5,16 @@ class Header extends React.Component {
   render() {
     return (
       <Navbar bg="dark" expand="lg" variant="dark">
-        <Navbar.Brand href="#home">FantasyGP</Navbar.Brand>
+        <Navbar.Brand href="#home">
+        <img
+          alt=""
+          src="/favicon.png"
+          width="32"
+          height="32"
+          className="d-inline-block align-top"
+        />{' '}
+        FantasyGP
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mr-auto">
