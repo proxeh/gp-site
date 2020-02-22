@@ -1,12 +1,14 @@
 import React from 'react';
-import { Jumbotron } from 'react-bootstrap';
+import { Button, Container, Jumbotron } from 'react-bootstrap';
 
 class BigBanner extends React.Component {
   render() {
     return (
       <Jumbotron>
-        <h1>{this.props.title}</h1>
-        <p>{this.props.content}</p>
+        <Container>
+          <h1>{this.props.title}</h1>
+          <p>{this.props.content}</p>
+        </Container>
       </Jumbotron>
     );
 
