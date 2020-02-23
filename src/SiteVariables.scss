@@ -1,11 +1,16 @@
+/* Body stuff */
 $body-color: #666;
 $body-font: 'Roboto', Arial;
+$border-color: #343434;
+
+/* Headers */
 $header-font: 'Passion One';
 $header-color: #343434;
 $header-margin: 0 0 1rem 0;
+$header-shadow: 3px 3px 2px rgba(107,107,107,0.5);
 
+/* Navigation */
 $nav-bg: #343a40;
 
-$border-color: $header-color;
-
+/* Content Bits */
 $cardmargin: 0 0 2rem 0;

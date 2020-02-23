@@ -5,9 +5,15 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
+	.text-shadow {
+		text-shadow: $header-shadow;
+	}
+	&.text-white {color: white;}	
 
 	h1 {
 		margin: $header-margin;
-		padding: 0;
+		padding: 0;		
+		color: white;
+		text-shadow: $header-shadow;
 	}
 }

@@ -7,7 +7,12 @@ class PredictionsEdit extends React.Component {
 	render() {
 		return (
 			<div>
-				<BigBanner title="Welcome to the site!" content="Scroll down to learn more" />
+				<BigBanner
+					title="Welcome to the site!"
+					content="Scroll down to learn more"
+					bannerClass="text-shadow text-white"
+					h1ClassName="text-white"
+				/>
 				<div className="container">
 					<p>
 						Edit your predictions.<br /><br />

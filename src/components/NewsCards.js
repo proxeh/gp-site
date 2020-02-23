@@ -2,11 +2,15 @@ import React from "react";
 
 import { Card, CardColumns } from 'react-bootstrap';
 
+// REMINDER!!
+// This all still needs tidied up. It's just a boilerplate for now.
+// I'll probably split out CardColumns into its own component and inject the cards.
+
 class NewsCards extends React.Component {
 	render() {
 		return (
 			<div>
-				<h2>Latest News</h2>			
+				<h2>{this.props.title}</h2>			
 				<CardColumns>
 					<Card>
 						<Card.Img variant="top" src="https://via.placeholder.com/356x160" />

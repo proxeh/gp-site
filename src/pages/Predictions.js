@@ -20,7 +20,11 @@ class Predictions extends React.Component {
 	render() {
 		return (
 			<div>
-				<BigBanner title="Your race predictions" bannerClass="text-center" />
+				<BigBanner
+					title="Your race predictions"
+					bannerClass="text-shadow text-white"
+					h1ClassName="text-white"
+				/>
 				<div className="container">
 					<div className="page-introcontent">
 						<Row>

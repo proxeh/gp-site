@@ -11,7 +11,9 @@ class ContactUs extends React.Component {
 					title="Got a problem?"
 					content="Why not get in touch with us"
 					bannerBackground="https://www.formula1.com/content/fom-website/en/championship/inside-f1/safety/cockpit-crash-tests/Crash_tests/_jcr_content/image16x9.img.1536.high.jpg"
-					extraStyles="background-position: top center"
+					bannerClass="text-shadow text-white"
+					h1ClassName="text-white"
+					extraStyles="background-position: top center"					
 				/>
 				<Container>
 					<div className="page-introcontent">
