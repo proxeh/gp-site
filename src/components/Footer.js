@@ -11,6 +11,16 @@ class Footer extends React.Component {
         <Container>
           <Row>
             <Col>
+              <h2>
+                <img
+                  alt=""
+                  src="/favicon.png"
+                  width="32"
+                  height="32"
+                  className="d-inline-block align-top"
+                />{' '}
+                Formula Fantasy
+              </h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet, nunc ut varius maximus, enim felis vehicula erat, quis iaculis lectus tortor ac mi.
               </p>

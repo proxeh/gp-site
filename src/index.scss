@@ -54,6 +54,8 @@ a {
 
 /* Card Styles */
 .card {
+  margin: $cardmargin;
+  
   &--info {
     a {
       color: white;

@@ -18,7 +18,15 @@ class Homepage extends React.Component {
 				/>
 				<div className="container">
 					<Card>
-						<Card.Body>This is the homepage.</Card.Body>						
+						<Card.Body>
+							<h1>Welcome to Fantasy Formula!</h1>
+							<p>
+								This is the homepage.
+							</p>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus in lobortis libero. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce gravida lacus et finibus porttitor. Vestibulum ultricies hendrerit ligula vel blandit. Duis et auctor nulla. Etiam vehicula nulla at lacus feugiat rhoncus ac sit amet lorem.
+							</p>
+						</Card.Body>						
 					</Card>
 					<NewsCards title="Latest News" />
 				</div>
