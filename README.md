@@ -1,6 +1,6 @@
-## FantasyGP Project
+## Formula Fantasy Project
 
-Readme for Fantasy Grand Prix site.
+Readme for Formula Fantasy Grand Prix site.
 
 ## Dependencies
 
