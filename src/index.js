@@ -1,22 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import Header from './components/Header';
-import Footer from './components/Footer';
+import App from './components/App';
 
-import BigBanner from './components/BigBanner';
+import './index.scss';
 
-import './index.css';
-
-function App() {
+function MainApp() {
   return (
     <div className="body">
-      <Header />
-      <BigBanner title="Welcome!" content="Welcome to the site" />
-      <br /><br /><br /><br /><br />
-      <Footer />
+      <App />
     </div>
   );
 };
 
-ReactDOM.render(<App />, document.querySelector("#root"));
+ReactDOM.render(<MainApp />, document.querySelector("#root"));

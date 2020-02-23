@@ -1,7 +1,12 @@
 ## FantasyGP Project
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Readme for Fantasy Grand Prix site.
 
-### More Readme..
+## Dependencies
 
-Vestibulum sed risus a massa fermentum pretium sit amet et dui. Nullam.
+do npm install for each
+- node-sass
+- axios
+- react-bootstrap
+- react-router-dom
+- gh-pages

@@ -1,10 +1,13 @@
 import React from "react";
-import { Button, Container, Form, FormControl, Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { Container, Navbar } from "react-bootstrap";
+
+import './css/Header.scss';
 
 class Header extends React.Component {
   render() {
     return (
-      <Navbar bg="dark" expand="lg" variant="dark">
+      <Navbar bg="dark" expand="lg" variant="dark" className="site-header">
         <Container>
           <Navbar.Brand href="#home">
           <img
@@ -16,22 +19,27 @@ class Header extends React.Component {
           />{' '}
           FantasyGP
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="mr-auto">
-              <Nav.Link href="#home">Home</Nav.Link>
-              <NavDropdown title="Your Stuff" id="basic-nav-dropdown">
-                <NavDropdown.Item href="#action/3.1">Your Team</NavDropdown.Item>
-                <NavDropdown.Item href="#action/3.2">Your League</NavDropdown.Item>
-                <NavDropdown.Divider />
-                <NavDropdown.Item href="#action/3.4">Join a new League</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Form inline>
-              <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-              <Button variant="outline-success">Search</Button>
-            </Form>
-          </Navbar.Collapse>
+          <Container fluid>
+            <nav>
+              <ul>
+                <li>
+                  <Link to="/">Home</Link>
+                </li>
+                <li>
+                  <Link to="/about-us">About Us</Link>
+                </li>
+                <li>
+                  <Link to="/your-team">Your Team</Link>
+                </li>
+                <li>
+                  <Link to="/predictions">Predictions</Link>
+                </li>
+                <li>
+                  <Link to="/results">Results</Link>
+                </li>
+              </ul>
+            </nav>
+          </Container>
         </Container>
       </Navbar>
     );
