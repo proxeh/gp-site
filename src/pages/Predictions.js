@@ -4,7 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 
 import BigBanner from '../components/BigBanner';
 
-import DriverCard from './PredictionsDriverCard';
+import DriverCard from '../components/DriverCard';
 
 class Predictions extends React.Component {
 	constructor(props) {

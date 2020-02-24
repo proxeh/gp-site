@@ -4,6 +4,30 @@ import BigBanner from "../components/BigBanner";
 import { Card, Container, Form, Button, Row, Col } from "react-bootstrap";
 
 class ContactUs extends React.Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			name: '',
+			email: '',
+			comments: ''
+		}
+		this.onInputChange = this.onInputChange.bind(this);
+		this.onFormSubmit = this.onFormSubmit.bind(this);
+	}
+
+	onInputChange(e, contactName, contactEmail, contactComments) {
+		if (e.target.value !== '') {
+			let value = e.target.value;
+
+			this.setState({ [e.target.id]: value });
+		}
+	}
+	onFormSubmit(e) {
+		e.preventDefault();
+		console.log('Form submitted.');
+		console.log(this.state);
+	}
+
 	render() {
 		return (
 			<div>
@@ -28,18 +52,23 @@ class ContactUs extends React.Component {
 								<Form>
 									<Row>
 										<Col lg={6}>
-											<Form.Group controlId="contactName">
+											<Form.Group controlId="name">
 												<Form.Label>Your Name</Form.Label>
 												<Form.Control
 													type="text"
 													placeholder="Enter your name"
+													onChange={ contactName => this.onInputChange(contactName)}
 												/>
 											</Form.Group>
 										</Col>
 										<Col lg={6}>
-											<Form.Group controlId="contactEmail">
+											<Form.Group controlId="email">
 												<Form.Label>Email address</Form.Label>
-												<Form.Control type="email" placeholder="Enter email" />
+												<Form.Control
+													type="email"
+													placeholder="Enter email"
+													onChange={ contactEmail => this.onInputChange(contactEmail)}
+												/>
 												<Form.Text className="text-muted">
 													We'll never share your email with anyone else.
 													Promise! x
@@ -48,12 +77,17 @@ class ContactUs extends React.Component {
 										</Col>
 									</Row>
 
-									<Form.Group controlId="exampleForm.ControlTextarea1">
-										<Form.Label>Example textarea</Form.Label>
-										<Form.Control as="textarea" rows="3" />
+									<Form.Group controlId="comments">
+										<Form.Label>Your Message</Form.Label>
+										<Form.Control
+											as="textarea"
+											rows="3"
+											placeholder="Please be kind!"
+											onChange={ contactComments => this.onInputChange(contactComments)}
+										/>
 									</Form.Group>
 
-									<Button variant="primary" type="submit">
+									<Button variant="primary" type="submit" onClick={ e => this.onFormSubmit(e) }>
 										Submit
 									</Button>
 								</Form>

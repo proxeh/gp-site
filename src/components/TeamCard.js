@@ -1,16 +1,20 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
-class DriverCard extends React.Component {
+class TeamCard extends React.Component {
 	render() {
 		return (
 			<Col lg={4}>
 				<Card className="text-center">
-					Driver Name: {this.props.driverName}
+					<img
+						src="#"
+						alt={this.props.teamName}
+					/>
+					{this.props.teamName}
 				</Card>
 			</Col>
 		);
 	}
 }
 
-export default DriverCard;
+export default TeamCard;

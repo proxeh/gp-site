@@ -1,8 +1,8 @@
-@import '../../index.scss';
+@import '../../SiteVariables.scss';
 
 .site-footer {
   display: block;
-  width: 100vw;
+  width: 100%;
   background: $nav-bg;
   color: white;
   margin: 4rem 0 0 0;
